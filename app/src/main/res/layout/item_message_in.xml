@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgChatRoomPhoto"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:civ_border="false"
+                tools:src="@tools:sample/avatars" />
+
+        <TextView
+                android:id="@+id/tvFirstCharName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="M J"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_message_in"
+            android:padding="12dp"
+            android:text="@string/app_name"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="4dp"
+                android:text="@string/app_name"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

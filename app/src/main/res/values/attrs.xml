@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardLayout">
+        <attr name="cardShadowRadius" format="dimension"/>
+        <attr name="cardCornerRadius" format="dimension"/>
+        <attr name="cardShadowColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="JSImageView">
+        <attr name="js_src_color" format="color" />
+
+    </declare-styleable>
+    <declare-styleable name="GradientView">
+        <attr name="gradientStartColor" format="color"/>
+        <attr name="gradientEndColor" format="color"/>
+    </declare-styleable>
+
+
+
+<declare-styleable name="ExpandableLayout">
+        <attr name="canExpand" format="boolean" />
+        <attr name="startExpanded" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PatternedEditText">
+        <attr name="pattern" format="string"/>
+        <attr name="specialChar" format="string"/>
+        <attr name="showPatternAsHint" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="GlowLayout">
+        <attr name="glowLayoutSetText" format="string"/>
+        <attr name="glowLayoutTextColor" format="color"/>
+        <attr name="glowLayoutTextSize" format="dimension"/>
+        <attr name="glowLayoutRippleColor" format="color"/>
+        <attr name="glowLayoutBackgroundColor" format="color"/>
+        <attr name="glowLayoutGlowColor" format="color"/>
+        <attr name="glowLayoutGlowY" format="dimension"/>
+        <attr name="glowLayoutGlowSize" format="dimension"/>
+        <attr name="glowLayoutIcon" format="reference"/>
+        <attr name="glowLayoutIconColor" format="color"/>
+        <attr name="glowLayoutIconSize" format="dimension"/>
+        <attr name="glowLayoutCornerRadius" format="dimension"/>
+        <attr name="glowLayoutStrokeColor" format="color"/>
+        <attr name="glowLayoutStrokeWidth" format="dimension"/>
+        <attr name="glowLayoutTypeface" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SVGImageView">
+        <attr name="src" format="reference" />
+        <attr name="srcColor" format="color" />
+        <attr name="srcShadowRadius" format="dimension" />
+        <attr name="srcGradientStartColor" format="color"/>
+        <attr name="srcGradientEndColor" format="color"/>
+        <attr name="srcGradientStart" format="enum">
+            <enum name="Top" value="0"/>
+            <enum name="Right" value="1"/>
+            <enum name="Bottom" value="2"/>
+            <enum name="Left" value="3"/>
+            <enum name="TopLeft" value="4"/>
+            <enum name="TopRight" value="5"/>
+            <enum name="BottomLeft" value="6"/>
+            <enum name="BottomRight" value="7"/>
+        </attr>
+        <attr name="srcGradientEnd" format="enum">
+            <enum name="Top" value="0"/>
+            <enum name="Right" value="1"/>
+            <enum name="Bottom" value="2"/>
+            <enum name="Left" value="3"/>
+            <enum name="TopLeft" value="4"/>
+            <enum name="TopRight" value="5"/>
+            <enum name="BottomLeft" value="6"/>
+            <enum name="BottomRight" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="GlowButton">
+        <attr name="glowButtonWidth" format="dimension"/>
+        <attr name="glowButtonHeight" format="dimension"/>
+        <attr name="glowButtonSetText" format="string"/>
+        <attr name="glowButtonTextColor" format="color"/>
+        <attr name="glowButtonTextSize" format="dimension"/>
+        <attr name="glowButtonRippleColor" format="color"/>
+        <attr name="glowButtonBackgroundColor" format="color"/>
+        <attr name="glowButtonGlowColor" format="color"/>
+        <attr name="glowButtonGlowSize" format="dimension"/>
+        <attr name="glowButtonGlowY" format="dimension"/>
+        <attr name="glowButtonIcon" format="reference"/>
+        <attr name="glowButtonIconColor" format="color"/>
+        <attr name="glowButtonIconSize" format="dimension"/>
+        <attr name="glowButtonCornerRadius" format="dimension"/>
+        <attr name="glowButtonStrokeColor" format="color"/>
+        <attr name="glowButtonStrokeWidth" format="dimension"/>
+        <attr name="glowButtonTypeface" format="string"/>
+        <attr name="glowButtonLabelTypeface" format="string"/>
+        <attr name="glowButtonSetLabel" format="string"/>
+        <attr name="glowButtonLabelSize" format="dimension"/>
+        <attr name="glowButtonOpen" format="boolean"/>
+    </declare-styleable>
+
+
+    <attr name="badgeText" format="string"/>
+    <attr name="badgeBitmap" format="reference"/>
+    <attr name="badgeBackgroundColor" format="color"/>
+    <attr name="badgeTextColor" format="color"/>
+    <attr name="badgeTextSize" format="dimension"/>
+    <attr name="badgePadding" format="dimension"/>
+    <attr name="badgeAnimationDuration" format="integer"/>
+
+</resources>

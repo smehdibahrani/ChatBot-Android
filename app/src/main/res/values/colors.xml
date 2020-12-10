@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F1F22</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="semi_gray">#979797</color>
+    <color name="dark_gray">#696969</color>
+    <color name="bg_color">#efefef</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="message_in">#ededed</color>
+    <color name="message_out">#00C1C2</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#88ffffff</color>
+    <color name="fb">#3b5998</color>
+    <color name="google">#FF5384</color>
+
+    <color name="shadow">#d0d8dc</color>
+    <!--Design colors-->
+    <color name="red_dark">#F44336</color>
+    <color name="red_dark2">#D85A1B</color>
+    <color name="cyan_light">#c9ebee</color>
+    <color name="cyan">#b5e3e7</color>
+    <color name="cyan_dark">#70BDC6</color>
+    <color name="navy_blue">#214258</color>
+    <color name="navy_blue_dark">#1C3A4E</color>
+    <color name="light_green">#03F049</color>
+    <color name="light_blue">#55C8F0</color>
+    <color name="blue_black_dark">#13171D</color>
+    <color name="blue_black_light">#516179</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+    <color name="badgeColor">#FF5722</color>
+    <color name="yellow">#fff44f</color>
+
+
+    <color name="color1">#F44336</color>
+    <color name="color2">#9C27B0</color>
+    <color name="color3">#2196F3</color>
+    <color name="color4">#00BCD4</color>
+    <color name="color5">#009688</color>
+    <color name="color6">#4CAF50</color>
+    <color name="color7">#CDDC39</color>
+    <color name="color8">#FF5722</color>
+    <color name="color9">#1976D2</color>
+    <color name="color10">#FF9800</color>
+    <color name="color11">#64DD17</color>
+    <color name="color12">#E91E63</color>
+    <color name="color13">#00E676</color>
+    <color name="color14">#558B2F</color>
+    <color name="color15">#5D4037</color>
+</resources>

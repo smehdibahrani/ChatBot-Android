@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+                name="viewModel"
+                type="ir.chatbot.ui.chatroom.ChatRoomsViewModel" />
+
+    </data>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color"
+            android:theme="@style/AppTheme.DarkStatusBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                  -->
+<!--           -->
+<!--                    android:layout_marginBottom="8dp"-->
+<!--                    app:cardCornerRadius="24dp"-->
+<!--                    app:cardElevation="12dp"-->
+
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    app:layout_constraintDimensionRatio="16:9"-->
+<!--                    android:id="@+id/cvHeader"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent">-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintDimensionRatio="16:9"
+                        android:id="@+id/cvHeader"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                    <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/header"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0"
+                            app:sriv_border_width="0dp"
+                            app:sriv_left_bottom_corner_radius="30dp"
+                            app:sriv_left_top_corner_radius="0dp"
+                            app:sriv_oval="false"
+                            app:sriv_right_bottom_corner_radius="30dp"
+                            app:sriv_right_top_corner_radius="0dp" />
+
+
+                    <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/image">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/imgProfile"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:src="@drawable/profile_icon"
+                                app:civ_border="true"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp" />
+
+
+                        <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:text="@string/app_name"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                                android:id="@+id/tvEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:text="@string/app_name"
+                                android:textColor="@color/light_gray"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <ImageView
+                            android:id="@+id/imgLogOut"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_margin="24dp"
+                            android:src="@drawable/ic_settings_power_black_24dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                            android:id="@+id/imgConnectionStatus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_margin="24dp"
+                            android:src="@drawable/ic_signal_gray_24dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cvHeader"
+                    tools:listitem="@layout/item_chat_room" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    android:theme="@style/AppTheme.blueAccent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_add_white_24dp" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                    android:id="@+id/contentLoadingProgressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="112dp"
+                    android:theme="@style/AppTheme.blueAccent"
+                    android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</layout>

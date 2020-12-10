@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ChatBot</string>
+    <string name="title">Chat Bot</string>
+    <string name="server_connect_error">connect to server error</string>
+    <string name="server_error">internal error</string>
+    <string name="internet_connection_error">internet connection error</string>
+    <string name="typeMessage">Type a message here</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="chatRoomName">enter chat room name</string>
+    <string name="alertDeleteChatRoom">Delete Chat Room: \nAll messages will be delete\nAre you sure?</string>
+    <string name="textCopied">Text Copied</string>
+    <string name="titleCreateChatRoom">Create new chat room:</string>
+    <string name="photo">photo</string>
+</resources>

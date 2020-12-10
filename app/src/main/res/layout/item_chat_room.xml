@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp">
+
+    <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+        <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/imgChatRoomPhoto"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    app:civ_border="false"
+                    tools:src="@tools:sample/avatars" />
+
+            <TextView
+                    android:id="@+id/tvFirstCharName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="M J"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_effective"
+                        android:textSize="20sp"
+                        tools:text="@tools:sample/lorem[3]" />
+
+                <TextView
+                        android:id="@+id/tvBadge"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_marginEnd="16sp"
+                        android:background="@drawable/bg_badge"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="59"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/tvLastMessage"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    tools:text="@tools:sample/lorem[2]" />
+
+                <TextView
+                        android:id="@+id/tvLastMessageDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="14sp"
+                        tools:text="2019/01/01" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
