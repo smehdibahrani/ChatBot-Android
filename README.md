@@ -1,4 +1,4 @@
-[![very good | 100x50,20%](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic3.png)]
+[![](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic3.png)]
 [![](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic1.png)]
 [![](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic2.png)]
 
