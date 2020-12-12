@@ -1,6 +1,6 @@
 [![Express Logo](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic3.png)](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic1.png)
 [![Express Logo](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic1.png)](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic2.png)
-[![Express Logo](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic2.png)](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic3.png)
+[![Express Logo](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic2.png | height=100)](https://github.com/smehdibahrani/ChatBot-Android/blob/main/pic3.png)
   <!-- Fast, unopinionated, minimalist web framework for [node](http://nodejs.org). -->
 
   
