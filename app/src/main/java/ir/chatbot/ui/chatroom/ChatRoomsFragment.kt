@@ -129,7 +129,13 @@ class ChatRoomsFragment : BaseFragment<FragmentChatRoomsBinding, ChatRoomsViewMo
     private fun setUpUi() {
         tvName.text = mChatRoomsViewModel.dataManager.name
         tvEmail.text = mChatRoomsViewModel.dataManager.email
-
+        if (mChatRoomsViewModel.dataManager.picUrl.isNotEmpty()) {
+            Picasso.get()
+                .load(mChatRoomsViewModel.dataManager.picUrl)
+                .placeholder(R.drawable.profile_icon)
+                .error(R.drawable.profile_icon)
+                .into(imgProfile)
+        }
 
         NetworkReceiverListener = object : NetworkReceiver.OnNetworkStateChangedListener {
             override fun onChange(status: ConnectionStatus) {
@@ -198,7 +204,7 @@ class ChatRoomsFragment : BaseFragment<FragmentChatRoomsBinding, ChatRoomsViewMo
                 }
             }
         })
-        fab.show()
+
         fab.setOnClickListener {
             CreateChatRoomDialog.newInstance(object : OnChatRoomCreatedListener {
                 override fun onChatRoomCreated() {
@@ -222,13 +228,7 @@ class ChatRoomsFragment : BaseFragment<FragmentChatRoomsBinding, ChatRoomsViewMo
         }
 
 
-        if (mChatRoomsViewModel.dataManager.picUrl.isNotEmpty()) {
-            Picasso.get()
-                .load(mChatRoomsViewModel.dataManager.picUrl)
-                .placeholder(R.drawable.profile_icon)
-                .error(R.drawable.profile_icon)
-                .into(imgProfile)
-        }
+
 
 
         listener = object : OnNewMessageListener {
