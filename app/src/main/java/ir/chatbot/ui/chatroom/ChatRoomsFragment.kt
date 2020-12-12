@@ -38,8 +38,6 @@ class ChatRoomsFragment : BaseFragment<FragmentChatRoomsBinding, ChatRoomsViewMo
     ChatRoomsNavigator {
 
 
-
-
     companion object {
         var listener: OnNewMessageListener? = null
         val TAG: String = ChatRoomsFragment::class.java.simpleName
@@ -119,9 +117,6 @@ class ChatRoomsFragment : BaseFragment<FragmentChatRoomsBinding, ChatRoomsViewMo
     }
 
 
-
-
-
     override fun updateList(list: List<VMChatRoomMessageJoined>) {
         adapter!!.clear()
         adapter!!.insert(list)
@@ -138,7 +133,8 @@ class ChatRoomsFragment : BaseFragment<FragmentChatRoomsBinding, ChatRoomsViewMo
 
         NetworkReceiverListener = object : NetworkReceiver.OnNetworkStateChangedListener {
             override fun onChange(status: ConnectionStatus) {
-                conStatus =  if (MySocket.instance.isSocketConnected)  ConnectionStatus.CONNECTED else if(isNetworkConnected) ConnectionStatus.CONNECTING else ConnectionStatus.OFFLINE
+                conStatus =
+                    if (MySocket.instance.isSocketConnected) ConnectionStatus.CONNECTED else if (isNetworkConnected) ConnectionStatus.CONNECTING else ConnectionStatus.OFFLINE
                 updateConnectionStatusUi(conStatus)
             }
         }
@@ -202,7 +198,7 @@ class ChatRoomsFragment : BaseFragment<FragmentChatRoomsBinding, ChatRoomsViewMo
                 }
             }
         })
-
+        fab.show()
         fab.setOnClickListener {
             CreateChatRoomDialog.newInstance(object : OnChatRoomCreatedListener {
                 override fun onChatRoomCreated() {

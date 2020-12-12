@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.gms.fitness.data.Goal
+//import com.google.android.gms.fitness.data.Goal
 import ir.chatbot.data.model.VMChatRoom
 import ir.chatbot.utils.Helper
 import java.util.ArrayList

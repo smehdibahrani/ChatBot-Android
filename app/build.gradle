@@ -83,9 +83,9 @@ dependencies {
     def calligraphyVersion = '2.2.0'
     implementation "uk.co.chrisjenx:calligraphy:$calligraphyVersion"
     
-    implementation 'com.google.android.gms:play-services:12.0.1'
+    //implementation 'com.google.android.gms:play-services:12.0.1'
 
-    implementation 'com.google.android.gms:play-services-auth:9.2.1'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
 
 
     implementation "androidx.legacy:legacy-support-v4:1.0.0"

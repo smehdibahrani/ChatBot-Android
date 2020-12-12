@@ -93,11 +93,13 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>(), Logi
         super.onActivityResult(requestCode, resultCode, data)
 
         Log.i("mehdi",resultCode.toString())
-        if (resultCode == RESULT_OK)
+        Log.i("mehdi",requestCode.toString())
+       // Log.i("mehdi",data!!.dataString!!)
+      //  if (resultCode == RESULT_OK)
             if (requestCode == RC_SIGN_IN) {
                 try {
                     val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-                    val account: GoogleSignInAccount = task.getResult(ApiException::class.java)
+                    val account: GoogleSignInAccount = task.getResult(ApiException::class.java)!!
                     onLoggedIn(account)
                 } catch (e: ApiException) {
                     Log.w(TAG, "signInResult:failed code=" + e.statusCode);
@@ -138,6 +140,7 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>(), Logi
 
 
     private fun signIn() {
+
         val signInIntent = googleSignInClient!!.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
 
