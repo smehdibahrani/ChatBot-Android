@@ -14,19 +14,9 @@
   * Content negotiation
   * Executable for generating applications quickly -->
 
-## Quick Start
+## ChatBot Client Android
 
-```bash
-$ npm install
-```
-
-  Start the server:
-
-```bash
-$ npm start
-```
-
-  Your server running at: http://localhost:2001
+  app created by MVVM Architecture. and using socket io.
 
 
 
